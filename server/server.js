@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(cors({credentials:true}));
 //api end points
 app.get('/',(req,res) => res.send("the web working fine"));
-app.use('/api/auth',authRouter)
+app.use('/api/auth',authRouter);
 
 app.listen(port,()=>console.log(`server started on:${port}`));
 
